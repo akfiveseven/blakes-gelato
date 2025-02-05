@@ -1,5 +1,5 @@
 import logo from "../assets/logo.png"
-import maitland_logo from "../assets/maitland.png"
+import maitland_logo from "../assets/shed_transparent.png"
 
 
 const Navbar = () => {
@@ -46,7 +46,7 @@ const Navbar = () => {
             <span className="text-2xl">Merch</span>
           </a>
           <a className="flex flex-col items-center text-gray-500 hover:text-black transition">
-            <span className="text-2xl">Contact Us</span>
+            <span className="text-2xl">Contact</span>
           </a>
         </div>
       </nav>
