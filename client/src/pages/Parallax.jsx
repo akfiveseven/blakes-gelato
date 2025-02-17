@@ -17,14 +17,14 @@ const ParallaxHero = () => {
   }, []);
 
   return (
-    <div className="hidden md:block relative h-[calc(100vh)] overflow-hidden mt-20 md:mt-0">
+    <div className="relative h-[calc(100vh)] overflow-hidden md:mt-0" id="hero">
       {/* Background Image Layer */}
       <div 
         className="absolute inset-0 bg-cover bg-center blur-xl"
         style={{
           backgroundImage: `url(${logo})`,
-          transform: `translateY(${scrollPosition * 0.5}px) scale(1.2)`, // Increased scale to prevent blur edges
-          filter: 'blur(4px) brightness(0.8)',
+          transform: `translateY(${scrollPosition * 0.5}px) scale(1.1)`, // Increased scale to prevent blur edges
+          filter: 'blur(8px) brightness(0.4)',
         }}
       />
 
@@ -55,10 +55,14 @@ const ParallaxHero = () => {
         }}
       >
         <div className="text-center p-8 relative z-10">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">
-            Blake's Gelato
+          <h1 className="hidden md:block text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">
+            About Us
           </h1>
-          <p className="text-white !text-3xl m-16">Blake’s Gelato is a locally made, authentic treat crafted by Blake himself—every batch is handmade with care, ensuring the highest quality and flavor. Based in Maitland, Australia, Blake’s Gelato brings a rich, traditional taste to the community, made with passion and dedication. You can find it at The Woodville Store, Vacy General Store, and Bella and Co. Coffee Cart. Whether you're after a classic favorite or something new, Blake’s Gelato is the perfect way to indulge in a truly artisanal experience.</p>
+          <h1 className="block md:hidden text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">
+            Blake's Gelato
+            <br /><br />
+          </h1>
+          <p className="text-white !text-md m-2 md:!text-3xl md:m-16">Blake’s Gelato is a locally made, authentic treat crafted by Blake himself—every batch is handmade with care, ensuring the highest quality and flavor. Based in Maitland, Australia, Blake’s Gelato brings a rich, traditional taste to the community, made with passion and dedication. You can find it at The Woodville Store, Vacy General Store, and Bella and Co. Coffee Cart. Whether you're after a classic favorite or something new, Blake’s Gelato is the perfect way to indulge in a truly artisanal experience.</p>
           {/*
           <button className="bg-white text-gray-800 px-8 py-3 rounded-full font-semibold 
                            hover:bg-gray-100 transition-colors duration-300 shadow-lg">
