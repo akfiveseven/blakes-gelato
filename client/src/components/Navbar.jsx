@@ -36,7 +36,7 @@ const Navbar = () => {
       </nav>
       */}
 
-      <nav className="hidden border-t md:block bg-white border-black-200 fixed w-full z-50 top-0 shadow-lg">
+      <nav className="hidden border-b md:block bg-white border-[#cccccc] fixed w-full z-50 top-0 shadow-lg">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#hero" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src={logo} className="h-12" />
